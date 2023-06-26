@@ -1,0 +1,38 @@
+<ion-content>
+  <div *ngIf="receta!=null">
+    <ion-item>
+      <ion-label position="staked">Nombre :</ion-label>
+      <ion-input [(ngModel)]="receta.titulo"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Descripcion :</ion-label>
+      <ion-textarea [(ngModel)]="receta.descripcion" rows="8"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Elaboración :</ion-label>
+      <ion-textarea [(ngModel)]="receta.elaboracion" rows="8"></ion-textarea>
+    </ion-item>
+  </div>
+  <ion-item>
+    <ion-label position="stacked">Ingredientes</ion-label>
+    <ion-textarea [(ngModel)]="receta.ingredientes" rows="8"></ion-textarea>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Autor :</ion-label>
+    <ion-textarea [(ngModel)]="receta.autor" rows="8"></ion-textarea>
+  </ion-item>
+  
+  <ion-button expand="block" color="success" (click)="updateReceta()">
+    <ion-icon name="save" slot="start"></ion-icon>
+    Update
+  </ion-button>
+
+  <ion-button expand="block" color="danger" (click)="deleteReceta()">
+    <ion-icon name="trash" slot="start"></ion-icon>
+    Delete
+  </ion-button>
+  <p></p>
+  
+  
+
+</ion-content>

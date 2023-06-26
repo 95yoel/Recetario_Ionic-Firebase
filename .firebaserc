@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "recetario-7ee16": {
+      "hosting": {
+        "app": [
+          "recetario-7ee16"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "recetario-7ee16"
+  }
+}
